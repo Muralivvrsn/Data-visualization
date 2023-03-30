@@ -1,10 +1,10 @@
 import React from 'react'
 import Chart from "react-apexcharts";
-const Weekly = ({options,series}) => {
+import {barChartDataWeeklyRevenue, barChartOptionsWeeklyRevenue } from '../chartData';
+const Weekly = () => {
   return (
-    <div>
-      <Chart type="bar" options={options} series={series} width="100%" height="100%"/>
-    </div>
+      <Chart type="bar"  className="pb-4 bg-white" options={barChartOptionsWeeklyRevenue} series={barChartDataWeeklyRevenue} width="100%" height="80%"/>
+
   )
 }
 

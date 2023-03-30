@@ -1,17 +1,10 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Chart from "react-apexcharts";
-import Weekly from './Weekly';
-// import Calendar from 'react-calendar';
-// import { MdChevronLeft,MdChevronRight } from 'react-icons/md'
-const Monthly = ({options,series}) => {
-    const [value, onChange] = useState(new Date());
+import {lineChartDataTotalSpent, lineChartOptionsTotalSpent} from '../chartData'
+const Monthly = () => {
   return (
-    <div className="w-full flex">
-      <div className="chart">
-      <Chart type="line" width="100%" height="100%" options={options} series={series}/>
-      </div>
-      <Weekly options={options} series={series}/>
-      </div>
+      <Chart type="line" width="100%" height="60%" className="pb-4 bg-white px-2 chart" options={lineChartOptionsTotalSpent} series={lineChartDataTotalSpent}/>
+     
   )
 }
 
