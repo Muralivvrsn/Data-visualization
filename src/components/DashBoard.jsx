@@ -17,7 +17,7 @@ const Dashboard = () => {
       <Details/>
       <div className="month-week  w-full flex">
         <div className="month ">
-        <SmallCard pic={true} text="This month"/>
+        <SmallCard key={6} pic={true} text="This month"/>
           <div className="spent flex w-1/4 pl-2 ml-2">
             $24K
           </div>
@@ -25,27 +25,27 @@ const Dashboard = () => {
           <Monthly/>
         </div>
         <div className="week ">
-        <SmallCard pic={false} text="Weekly revenue"/>
+        <SmallCard key={5} pic={false} text="Weekly revenue"/>
           <Weekly/>
         </div>
       </div>
       <div className="table-daily-pie flex rounded-lg">
         <div className="tablex rounded-lg">
-          <SmallCard pic={false} text="Check Table" icon={<FaEllipsisH className='w-4 h-4 mx-1 my-0 text-blue-500'/>} />
+          <SmallCard key={1} pic={false} text="Check Table" icon={<FaEllipsisH className='w-4 h-4 mx-1 my-0 text-blue-500'/>} />
           <Table/>
         </div>
         <div className="daily rounded-lg">
-        <SmallCard pic={false} text="Daily Traffic" icon={<FaBookOpen className='w-4 h-4 mx-1 my-0 text-blue-500'/>} />
+        <SmallCard key={3} pic={false} text="Daily Traffic" icon={<FaBookOpen className='w-4 h-4 mx-1 my-0 text-blue-500'/>} />
           <Daily/>
         </div>
         <div className="pie rounded-lg">
-        <SmallCard pic={false} text="Your Pie Chart" icon={<MdTrackChanges className='w-4 h-4 mx-1 my-0 text-blue-500'/>}/>
+        <SmallCard key={4} pic={false} text="Your Pie Chart" icon={<MdTrackChanges className='w-4 h-4 mx-1 my-0 text-blue-500'/>}/>
           <Piechart/>
         </div>
       </div>
       <div className="task-calender bg-transparent flex">
         <div className="task bg-transparent">
-          <SmallCard pic={false} text="Monthly Area graph" />
+          <SmallCard key={2} pic={false} text="Monthly Area graph" />
           <Area/>
         </div>
         <div className="calender bg-transparent">

@@ -6,6 +6,7 @@ const Table = () => {
   return (
     <div className='data-table rounded-lg'>
     <table className='w-full'>
+     
         <thead className=''>
         <tr className='row'>
             <th className='col font-bold border-double border-b-4 border-black-600 '>Name</th>
@@ -14,9 +15,10 @@ const Table = () => {
             <th className='col font-bold border-double border-b-4 border-black-600 '>Date</th>
         </tr>
         </thead>
+        <tbody>
         {
             data.map((item)=>(
-                <tr className='row text-center'>
+                <tr key={item.Quantity} className='row text-center'>
                     
                     <td className='col  text-left '><input type="checkbox" /><span>{item.Name}</span></td>
                     <td className='col  '>{item.Progress}</td>
@@ -25,6 +27,8 @@ const Table = () => {
                 </tr>
             ))
         }
+        </tbody>
+       
     </table>
     </div>
   )
