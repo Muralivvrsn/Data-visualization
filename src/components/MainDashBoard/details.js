@@ -5,7 +5,7 @@ import {FaCalendarDay} from 'react-icons/fa'
 import {MdSignalCellularAlt} from "react-icons/md"
 const details = () => {
   return (
-    <div className='grid grid-cols-3 details'>
+    <div className='grid grid-cols-3 details bg-white'>
         <Card money={true} name="Earnings" data={320} icon={  <IoStatsChart  className='w-2/4 h-2/4 text-blue-500 bg-transparent mx-auto mt-4'/>
 }></Card>
         <Card money={true} name="Spend this month" data={642} icon={<IoDocuments className='w-2/4 text-blue-500 bg-transparent h-2/4 mx-auto mt-4'/>}/>

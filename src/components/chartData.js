@@ -147,7 +147,7 @@ export const barChartDataDailyTraffic = [
       style: {
         fontSize: "12px",
         fontFamily: undefined,
-        backgroundColor: "#000000"
+        backgroundColor: "transparent"
       },
     },
   };
