@@ -6,14 +6,18 @@
 * {
   box-sizing: border-box;
 }
-.three,.no {
+.web {
+  display: none;
+}
+.three,
+.no {
   width: fit-content;
   height: fit-content;
   position: fixed;
   z-index: 9999;
   top: 8%;
 }
-.no{
+.no {
   text-align: center;
   background-color: white;
   margin-left: 1%;
@@ -41,7 +45,7 @@
 .three p:nth-child(2) {
   margin: 16px auto;
 }
-.sec{
+.sec {
   position: fixed;
   top: 14%;
   left: 1%;
@@ -54,7 +58,7 @@
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.class{
+.class {
   width: 20px;
   height: 20px;
   margin: 0;
@@ -101,7 +105,9 @@
 .psection {
   background-color: white;
   transform: translate(-50%, -50%);
-  margin-right: 200px;
+  left: 60%;
+  width: 80%;
+  margin-left: 60px;
   background-color: transparent;
 }
 .asection {
@@ -178,21 +184,29 @@
 .table-daily-pie {
   padding: 10px;
   margin: 30px auto;
-  height: 400px;
+  height: fit-content;
   justify-content: space-around;
   background-color: skyblue;
 }
 .tablex {
   background-color: white;
-  width: 45%;
+  width: 90%;
+  margin: auto;
   height: fit-content;
   box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
 }
 .daily,
 .pie {
   background-color: white;
-  width: 25%;
+  width: 45%;
+  
+  margin: 30px auto 0 auto;
   box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+}
+.daily{
+  margin: 30px auto 0 auto;
+  border-radius: 10px;
+  padding: 7px;
 }
 .data-table {
   margin: 0%;
@@ -203,7 +217,7 @@
   font-weight: 900;
 }
 .data-table > table {
-  height: 300px;
+  height: fit-content;
   border: none;
 }
 th,
@@ -215,11 +229,12 @@ table input {
   margin: auto 5px;
 }
 .task-calender {
-  height: 400px;
+  height: fit-content;
   justify-content: space-around;
 }
 .calender,
 .task {
+  height: fit-content;
   background-color: white;
   width: 45%;
   border-radius: 10px;
@@ -285,7 +300,7 @@ abbr[title] {
   .icons {
     margin: auto 1px;
   }
-  .web{
+  .web {
     display: none;
   }
   .details {
@@ -421,7 +436,7 @@ abbr[title] {
   }
   .psection {
     width: 90%;
-    left: 50%;
+    left: 40%;
   }
 }
 
@@ -558,7 +573,8 @@ abbr[title] {
     line-height: 2.3rem;
     padding: 5px;
   }
-  .web{
+  .web {
+    display: block;
     transition: all 0.3s ease;
   }
   .react-calendar__navigation button {
@@ -568,12 +584,13 @@ abbr[title] {
     background: none;
     font-size: 16px;
   }
-  .asection,.leftHeader {
+  .asection,
+  .leftHeader {
     display: none;
   }
   .psection {
     width: 90%;
-    left: 50%;
+    left: 37%;
   }
   .topHeader {
     left: 50%;
@@ -591,7 +608,7 @@ abbr[title] {
   .icons {
     margin: auto 1px;
   }
-  .leftHeader{
+  .leftHeader {
     display: none;
   }
   .details {
@@ -608,6 +625,9 @@ abbr[title] {
   }
   .main {
     margin-top: 150px;
+  }
+  .web {
+    display: block;
   }
   .items {
     background-color: white;
@@ -743,17 +763,17 @@ abbr[title] {
     display: none;
   }
   .psection {
-    width: 100%;
-    left: 50%;
+    width: 90%;
+    left: 33%;
     transform: translate(-50%, -50%);
   }
   .leftHeader {
     display: none;
   }
   .topHeader {
-    left: 50%;
+    left: 53%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
   th,
@@ -772,7 +792,8 @@ abbr[title] {
     margin-right: auto;
     width: 90%;
   }
-  .web{
+  .web {
     display: block;
   }
 }
+

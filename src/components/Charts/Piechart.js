@@ -7,7 +7,7 @@ const Piechart = () => {
     <Chart
       type="pie"
       width="100%"
-      height="100%"
+      height="90%"
       className="pie-chart"
       options={pieChartOptions}
       series={pieChartData}
