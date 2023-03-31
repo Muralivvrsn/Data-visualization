@@ -6,6 +6,59 @@
 * {
   box-sizing: border-box;
 }
+.three,.no {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  z-index: 9999;
+  top: 8%;
+}
+.no{
+  text-align: center;
+  background-color: white;
+  margin-left: 1%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+  top: 6%;
+  border-radius: 50%;
+  box-shadow: rgba(56, 56, 255, 0.567) 0px 50px 100px -20px,
+    rgba(222, 40, 40, 0.64) 0px 30px 60px -30px,
+    rgba(34, 144, 255, 0.846) 0px -2px 6px 0px inset;
+}
+
+.three p {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  border-radius: 4px;
+}
+.three p:nth-child(1) {
+  margin: 8px auto;
+}
+.three p:nth-child(2) {
+  margin: 16px auto;
+}
+.sec{
+  position: fixed;
+  top: 14%;
+  left: 1%;
+  width: 100px;
+  z-index: 999999999;
+  background-color: white;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.class{
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
 .main,
 .topHeader,
 .leftHeader {
@@ -132,6 +185,7 @@
 .tablex {
   background-color: white;
   width: 45%;
+  height: fit-content;
   box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
 }
 .daily,
@@ -173,7 +227,7 @@ table input {
 .icons {
   background-blend-mode: multiply;
 }
-.text{
+.text {
   font-size: 2rem;
   text-align: center;
 }
@@ -213,4 +267,512 @@ abbr[title] {
 .cln {
   height: 100%;
   width: 100%;
+}
+
+.market {
+  height: 600px;
+  margin: 50px;
+  background-color: white;
+  padding: 70px;
+  box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+  border-radius: 20px;
+}
+.daily-pie {
+  height: 400px;
+}
+
+@media screen and (max-width: 1008px) and (min-width: 720px) {
+  .icons {
+    margin: auto 1px;
+  }
+  .web{
+    display: none;
+  }
+  .details {
+    background-color: white;
+    padding: 5px;
+    margin: 20px 10px;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background-color: transparent;
+  }
+  .main {
+    margin-top: 150px;
+  }
+  .items {
+    background-color: white;
+    width: 95%;
+    border-radius: 20px;
+    padding: 5px;
+    height: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+  .icon {
+    background-color: white;
+    margin: auto 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo {
+    padding: 40px 10px;
+    font-size: 20px;
+  }
+
+  .month-week {
+    height: 350px;
+    padding: 10px;
+    margin: auto;
+    justify-content: space-around;
+    background-color: skyblue;
+  }
+  .month,
+  .week {
+    background-color: white;
+    width: 47%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+  }
+  .table-daily-pie {
+    padding: 5px;
+    margin: 30px auto;
+    height: 700px;
+    justify-content: space-around;
+    background-color: skyblue;
+  }
+  .tablex {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+  }
+  .daily,
+  .pie {
+    margin: auto;
+    background-color: white;
+    width: 45%;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+  }
+  .data-table {
+    margin: 0%;
+    width: 90%;
+    height: auto;
+    padding: 2px 0px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+  }
+  .data-table > table {
+    height: 200px;
+    border: none;
+  }
+
+  .task-calender {
+    height: 350px;
+    justify-content: space-around;
+  }
+  .calender,
+  .task {
+    background-color: white;
+    width: 45%;
+    border-radius: 10px;
+  }
+  .icons {
+    background-blend-mode: multiply;
+  }
+  .calender {
+    height: 90%;
+  }
+  .market {
+    height: 400px;
+    width: 80%;
+    margin: 50px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+    border-radius: 20px;
+  }
+  .pro-sec {
+    grid-template-columns: 1fr;
+  }
+  .react-calendar {
+    width: 400px;
+    max-width: 100%;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.3rem;
+    padding: 5px;
+  }
+  .react-calendar__navigation button {
+    color: #6f48eb;
+    min-width: 30px;
+    margin: 8px auto;
+    background: none;
+    font-size: 16px;
+  }
+  .asection {
+    display: none;
+  }
+  .psection {
+    width: 90%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 719px) and (min-width: 480px) {
+  .icons {
+    margin: auto 1px;
+  }
+  .details {
+    background-color: white;
+    padding: 5px;
+    margin: 20px 10px;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    background-color: transparent;
+  }
+  .main {
+    margin-top: 150px;
+  }
+  .items {
+    background-color: white;
+    width: 95%;
+    border-radius: 20px;
+    padding: 5px;
+    height: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+  .daily-pie {
+    height: fit-content;
+    display: block;
+  }
+  .icon {
+    background-color: white;
+    margin: auto 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo {
+    padding: 40px 10px;
+    font-size: 20px;
+  }
+
+  .month-week {
+    height: fit-content;
+    padding: 10px;
+    margin: auto;
+    justify-content: space-around;
+    background-color: skyblue;
+    display: block;
+  }
+  .month,
+  .week {
+    background-color: white;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+  }
+  .table-daily-pie {
+    padding: 5px;
+    margin: auto;
+    height: fit-content;
+    justify-content: space-around;
+    background-color: skyblue;
+    display: block;
+  }
+  .tablex {
+    background-color: white;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+  }
+  .daily,
+  .pie {
+    margin: 20px auto;
+    background-color: white;
+    width: 90%;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+  }
+  .data-table {
+    margin: 5px auto;
+    width: 90%;
+    padding: 2px 0px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+  }
+  .data-table > table {
+    height: 200px;
+    border: none;
+  }
+
+  .task-calender {
+    height: fit-content;
+    display: block;
+  }
+  .calender,
+  .task {
+    background-color: white;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+  }
+  .icons {
+    background-blend-mode: multiply;
+  }
+  .calender {
+    height: 90%;
+  }
+  .market {
+    height: 400px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+    border-radius: 20px;
+  }
+  .pro-sec {
+    grid-template-columns: 1fr;
+  }
+  .react-calendar {
+    width: 400px;
+    max-width: 100%;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.3rem;
+    padding: 5px;
+  }
+  .web{
+    transition: all 0.3s ease;
+  }
+  .react-calendar__navigation button {
+    color: #6f48eb;
+    min-width: 15%;
+    margin: 8px auto;
+    background: none;
+    font-size: 16px;
+  }
+  .asection,.leftHeader {
+    display: none;
+  }
+  .psection {
+    width: 90%;
+    left: 50%;
+  }
+  .topHeader {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    margin: auto;
+  }
+  .main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .icons {
+    margin: auto 1px;
+  }
+  .leftHeader{
+    display: none;
+  }
+  .details {
+    background-color: white;
+    padding: 5px;
+    margin: 20px 10px;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    background-color: transparent;
+  }
+  .main {
+    margin-top: 150px;
+  }
+  .items {
+    background-color: white;
+    width: 95%;
+    border-radius: 20px;
+    padding: 5px;
+    height: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+  .daily-pie {
+    height: fit-content;
+    display: block;
+  }
+  .icon {
+    background-color: white;
+    margin: auto 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .xl {
+    width: 15px;
+    height: 15px;
+    margin: auto;
+  }
+  .pxl {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+  }
+  .logo {
+    padding: 40px 10px;
+    font-size: 20px;
+  }
+
+  .month-week {
+    height: fit-content;
+    padding: 10px;
+    margin: auto;
+    justify-content: space-around;
+    background-color: skyblue;
+    display: block;
+  }
+  .month,
+  .week {
+    background-color: white;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+  }
+  .table-daily-pie {
+    padding: 5px;
+    margin: auto;
+    height: fit-content;
+    justify-content: space-around;
+    background-color: skyblue;
+    display: block;
+  }
+  .tablex {
+    background-color: white;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+  }
+  .daily,
+  .pie {
+    margin: 20px auto;
+    background-color: white;
+    width: 90%;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+  }
+  .data-table {
+    margin: 5px auto;
+    width: 90%;
+    padding: 2px 0px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+  }
+  .data-table > table {
+    height: fit-content;
+    border: none;
+  }
+
+  .task-calender {
+    height: fit-content;
+    display: block;
+  }
+  .calender,
+  .task {
+    background-color: white;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+  }
+  .icons {
+    background-blend-mode: multiply;
+  }
+  .calender {
+    height: 90%;
+  }
+  .market {
+    height: 400px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 2px 30px rgba(10, 37, 64, 0.35);
+    border-radius: 20px;
+  }
+  .pro-sec {
+    grid-template-columns: 1fr;
+  }
+  .react-calendar {
+    width: 400px;
+    max-width: 100%;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.3rem;
+    padding: 5px;
+  }
+  .react-calendar__navigation button {
+    color: #6f48eb;
+    min-width: 15%;
+    margin: 8px auto;
+    background: none;
+    font-size: 16px;
+  }
+  .asection {
+    display: none;
+  }
+  .psection {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .leftHeader {
+    display: none;
+  }
+  .topHeader {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    margin: auto;
+  }
+  th,
+  td {
+    padding: 1px;
+  }
+
+  table input {
+    margin: auto 1px;
+  }
+  .xl:nth-child(4) {
+    margin-left: 20px;
+  }
+  .main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .web{
+    display: block;
+  }
 }

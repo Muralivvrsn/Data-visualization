@@ -5,7 +5,7 @@ import { FaCalendarDay } from "react-icons/fa";
 import { MdSignalCellularAlt } from "react-icons/md";
 const details = () => {
   return (
-    <div className="grid grid-cols-3 details bg-white">
+    <div className="grid grid-cols-2 details top-32 bg-white">
       <Card
         money={true}
         name="Earnings"

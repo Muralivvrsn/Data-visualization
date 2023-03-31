@@ -1,12 +1,10 @@
 import React from "react";
-
+import CandleStick from "../components/Charts/CandleStick";
 const MarketPlaces = () => {
   return (
-    <div className="main w-8/12">
-      <div className="market text">
-        <h1>
-          <em>Not Created At</em>
-        </h1>
+    <div className="main w-8/12 pt-4">
+      <div className="market">
+        <CandleStick className="stick"/>
       </div>
     </div>
   );

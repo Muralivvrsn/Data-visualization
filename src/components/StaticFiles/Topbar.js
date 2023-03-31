@@ -8,7 +8,7 @@ const TopHeader = ({text}) => {
       <h2 className='bg-transparent'>pages/{text}</h2>
       <h1 className='font-black text-2xl bg-transparent'>{text}</h1>
      </div>
-     <div className="psection flex absolute w-2/4 bg-white-500 rounded-full pr-8 items-center top-2/4 h-3/4 left-3/4">
+     <div className="psection flex absolute w-2/4 bg-white-500 rounded-full pr-8 items-center top-2/4 h-3/4">
       
       <div className="flex items-center w-3/4 pl-4 bg-transparent">   
           <div className="relative w-full bg-transparent">
@@ -20,12 +20,12 @@ const TopHeader = ({text}) => {
       </div>
 
       <div className="icons flex bg-transparent">
-        <IoNotificationsOutline className='w-5 h-5 mx-1 bg-transparent'/>
-        <IoMoonOutline className='w-5 h-5 mx-1 bg-transparent'/>
-        <IoAlertCircleOutline className='w-5 h-5 mx-1 bg-transparent'/>
+        <IoNotificationsOutline className='xl w-5 h-5 mx-1 bg-transparent'/>
+        <IoMoonOutline className='xl w-5 h-5 mx-1 bg-transparent'/>
+        <IoAlertCircleOutline className='xl w-5 h-5 mx-1 bg-transparent'/>
       </div>
       <div className="profile flex bg-transparent">
-        <IoPersonCircleOutline className='w-14 h-14 rounded-full bg-transparent'/>
+        <IoPersonCircleOutline className='pxl w-14 h-14 rounded-full bg-transparent'/>
       </div>
      </div>
     </div>

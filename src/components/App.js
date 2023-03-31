@@ -8,12 +8,14 @@ import MarketPlaces from "../views/MarketPlaces";
 import Profile from "../views/Profile";
 import Signin from "../views/Signin";
 import React, { useState } from "react";
+import Three from "./StaticFiles/Three";
 function App() {
   const [text, setText] = useState("Main Dashboard");
   const func = (data) => setText(data);
   return (
     <BrowserRouter>
       <div className="App">
+        <Three text={func} />
         <Topbar text={text} />
         <Sidebar text={func} />
         <Routes>
