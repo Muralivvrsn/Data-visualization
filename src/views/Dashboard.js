@@ -1,15 +1,15 @@
 import React,{useState} from 'react'
-import Details from './MainDashBoard/details'
-import Monthly from './chats/Monthly'
-import Weekly from './chats/Weekly'
-import Daily from './chats/Daily'
-import Piechart from './chats/Piechart'
-import SmallCard from './StaticFiles/smallCard'
-import Table from './MainDashBoard/Table'
+import Details from '../components/DashBoard/details'
+import Monthly from '../components/Charts/Monthly'
+import Weekly from '../components/Charts/Weekly'
+import Daily from '../components/Charts/Daily'
+import Piechart from '../components/Charts/Piechart'
+import SmallCard from '../components/StaticFiles/smallCard'
+import Table from '../components/DashBoard/Table'
 import {FaEllipsisH,FaBookOpen} from 'react-icons/fa'
 import {MdTrackChanges} from 'react-icons/md'
 import Calender from 'react-calendar'
-import Area from './chats/Area'
+import Area from '../components/Charts/Area'
 const Dashboard = () => {
   const [value, onChange] = useState(new Date());
   return (

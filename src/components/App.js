@@ -1,24 +1,21 @@
 import "../App.css";
-import TopHeader from "../components/StaticFiles/TopHeader";
-import LeftHeader from "../components/StaticFiles/LeftHeader";
+import Topbar from "./StaticFiles/Topbar";
+import Sidebar from "./StaticFiles/Sidebar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./Dashboard";
-import DataTables from "./DataTables";
-import MarketPlaces from "./MarketPlaces";
-import Profile from "./Profile";
-import Signin from "./Signin";
+import Dashboard from "../views/Dashboard";
+import DataTables from "../views/DataTables";
+import MarketPlaces from "../views/MarketPlaces";
+import Profile from "../views/Profile";
+import Signin from "../views/Signin";
 import React, { useState } from "react";
 function App() {
   const [text, setText] = useState("Main Dashboard");
-  function func(data) {
-    setText(data);
-    console.log(text);
-  }
+  const func = (data) => setText(data);
   return (
     <BrowserRouter>
       <div className="App">
-        <TopHeader text={text} />
-        <LeftHeader text={func} />
+        <Topbar text={text} />
+        <Sidebar text={func} />
         <Routes>
           <Route path="/" element={<Dashboard />}></Route>
           <Route path="/marketplace" exact element={<MarketPlaces />}></Route>
